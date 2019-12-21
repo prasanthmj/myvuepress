@@ -1,0 +1,12 @@
+<template>
+<div> 
+    <h2>site</h2>
+    <pre>
+        {{$site}}
+    </pre>
+    <h2>Page</h2>
+    <pre>
+        {{$page}}
+    </pre>
+</div>
+</template>
