@@ -1,42 +1,78 @@
 const path = require('path')
 
-module.exports = function(opts, ctx)
+var defaultSettings=
 {
-  var options = 
+  site_name:"form.guide",
+  append_title:true,
+  top_navbar:
   {
-    name: 'vuepress-theme-sponge',
+    classes:[],
+    menu:[
+      {
+          link:"/",
+          text:"Home"
+      }
+    ]
+  },
+  sidebar:
+  {
+    classes:[],
+    items:[]
+  },
+  bottom_block:
+  [
+      { type:'related-by-category' }
+  ],
+  footer:
+  {
+      classes:[],
+      columns: [ ]
+  }
+}
 
-    plugins: [
-      [
-        '@vuepress/register-components', {
-        componentsDir: [
-          path.resolve(__dirname, 'components')
-        ]
-      }],
-      require('@myvuepress/vuepress-plugin-categories'),
-      require("@myvuepress/vuepress-plugin-indexlist")
-    ],
-    ready()
+function spongeTheme(opts, ctx)
+{
+    var options = 
     {
-        const { siteConfig = {} } = ctx;
-        siteConfig.head = siteConfig.head || [];
+      name: 'vuepress-theme-sponge',
+      enhanceAppFiles: 
+      [
+          path.resolve(__dirname, 'enhanceApp.js')
+      ],
+      plugins: [
+        [
+          '@vuepress/register-components', {
+          componentsDir: [
+            path.resolve(__dirname, 'components')
+          ]
+        }],
+        require('@myvuepress/vuepress-plugin-categories'),
+        require('@myvuepress/vuepress-plugin-tagged'),
+        require("@myvuepress/vuepress-plugin-indexlist")
+      ],
+      ready()
+      {
+          const { siteConfig = {} } = ctx;
+          siteConfig.head = siteConfig.head || [];
 
-        let headers = [
-            ['link', { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' }],
-            
-            ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/prismjs@1.17.1/themes/prism.min.css' }],
-    
-            ['script', {  src: 'https://cdn.jsdelivr.net/npm/prismjs@1.17.1/prism.min.js' }]
-            
-        ];
-        for(let header of headers)
-        {
-            siteConfig.head.push(header);
-        }
+          console.log("themeConfig ",siteConfig.themeConfig);
+
+          let headers = [
+              ['link', { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' }],
+              
+              ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/prismjs@1.17.1/themes/prism.min.css' }],
+      
+              ['script', {  src: 'https://cdn.jsdelivr.net/npm/prismjs@1.17.1/prism.min.js' }]
+              
+          ];
+          for(let header of headers)
+          {
+              siteConfig.head.push(header);
+          }
+      }
     }
 
-    
-  }
-
-  return options;
+    return options;
 }
+
+module.exports = spongeTheme;

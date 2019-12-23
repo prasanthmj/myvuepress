@@ -31,9 +31,13 @@ function makeAdditionalPages(cx)
     for(let page of cx.pages)
     {
         //Skip Generated pages
-        if(page.frontmatter && page.frontmatter.is_generated)
+        if(page.frontmatter)
         {
-            continue;
+            if(page.frontmatter.is_generated || page.frontmatter.is_page)
+            {
+                continue;
+            }
+            
         }
         let cats = util.catutil.getCategories(page.regularPath);
         
@@ -76,7 +80,8 @@ function makeAdditionalPages(cx)
                     frontmatter:
                     {
                         no_related_pages:true,
-                        is_generated:true
+                        is_generated:true,
+                        is_category_page:true
                     },
                     content:`<CategoryPage category="${cx.link}" />`
                 }
@@ -104,7 +109,8 @@ function makeAdditionalPages(cx)
             frontmatter:
             {
                 no_related_pages:true,
-                is_generated:true
+                is_generated:true,
+                is_category_page:true
             },
             content:`<site-map-page/>`
         });

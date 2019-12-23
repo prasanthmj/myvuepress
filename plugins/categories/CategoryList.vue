@@ -1,5 +1,5 @@
 <template>
-<div v-if="pages.length">
+<div v-if="pages.length && !$page.frontmatter.is_page">
 <h4>{{heading}}</h4>
 <ul class="list-unstyled">
     <li v-for="page in pages" :key="page.key" class="pb-3 pl-2">

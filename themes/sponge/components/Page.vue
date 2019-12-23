@@ -1,34 +1,24 @@
 <template>
 <div>
     <bread-crumbs />
-    <article itemtype="http://schema.org/Article">
-    <div class="post_content" itemprop="articleBody">
+    <article class="post_content" itemtype="http://schema.org/Article">
     <header class="headline-container mb-3 border-bottom">
-    <h1 class="headline" itemprop="headline">
+    <h1 class="headline">
         <a :href="$page.path" rel="bookmark">{{$page.title}}</a>
     </h1>
-    <tag-list />
     </header>
-    <div class="post_content" itemprop="articleBody">
+    <div class="article_content" >
         <Content />
     </div>
-    </div>
+    
     </article>
     <bottom-block />
 </div>
 </template>
-<style >
+<style lang="scss">
 a.header-anchor
 {
     display:none;
-}
-
-.gf-divider 
-{
-    clear: both;
-    height: 70px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 1.5rem;
 }
 
 .crumbs a
@@ -39,10 +29,6 @@ a.header-anchor
 .crumbs a:hover
 {
     text-decoration: underline;
-}
-.tag-list
-{
-    font-size:0.8rem;
 }
 
 </style>

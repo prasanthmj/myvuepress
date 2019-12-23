@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div v-for="(side_item,idx) in $site.themeConfig.sidebar" :key="idx" class="mb-4">
+    <div :class="$site.themeConfig.sidebar.classes">
+        <div v-for="(side_item,idx) in $site.themeConfig.sidebar.items" :key="idx" class="mb-4" >
             <div v-if="side_item.type == 'banner'">
             <a :href="side_item.link"><img 
                         :src="side_item.image" :alt="side_item.alt_text"></a>

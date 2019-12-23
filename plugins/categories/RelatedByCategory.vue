@@ -1,5 +1,5 @@
 <template>
-<div v-if="pages.length">
+<div v-if="pages.length && !$page.frontmatter.is_page" >
 <h4 class="mb-4">{{heading}}</h4>
 <index-list :pages="pages" />
 

@@ -29,7 +29,8 @@ export default {
             {
                 return (page.path != '/doc.html' && 
                         page.path != '/' &&
-                        !page.frontmatter.is_generated );
+                        !page.frontmatter.is_generated &&
+                        !page.frontmatter.is_page );
             })).slice(0,10);
         }
     },
