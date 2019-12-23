@@ -1,0 +1,3 @@
+[submodule "websites/form-guide"]
+	path = websites/form-guide
+	url = git@gitlab.com:simfatic/form_guide_md.git

@@ -1,5 +1,6 @@
 {
   "name": "myvuepress",
+  "version": "1.0.1",
   "license": "UNLICENSED",
   "workspaces": [
     "plugins/*",
@@ -15,6 +16,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
     "show-website-1": "vuepress dev ./websites/website1",
+    "form-guide": "vuepress dev ./websites/form-guide/docs",
     "build": "lerna run build --stream"
   },
   "publishConfig": {
