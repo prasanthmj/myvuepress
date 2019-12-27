@@ -3,7 +3,7 @@
 <div v-for="ct in categories" :key="ct.link">
 <h3 ><a :href="ct.link">{{ct.text}}</a></h3>
 <div v-if="ct.pages" class="px-2"> 
-    <index-list :pages="ct.pages" />
+    <index-list :pages="ct.pages" :show_excerpt="true" />
 </div>
 </div>
 

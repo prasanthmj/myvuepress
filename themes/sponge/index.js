@@ -60,6 +60,9 @@ function spongeTheme(opts, ctx)
           let headers = [
               ['link', { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' }],
               
+              ['script', {  src: 'https://code.jquery.com/jquery-3.4.1.slim.min.js' }],
+              ['script', {  src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' }],
+
               ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/prismjs@1.17.1/themes/prism.min.css' }],
       
               ['script', {  src: 'https://cdn.jsdelivr.net/npm/prismjs@1.17.1/prism.min.js' }]

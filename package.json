@@ -16,7 +16,10 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
     "show-website-1": "vuepress dev ./websites/website1",
-    "form-guide": "vuepress dev ./websites/form-guide/docs",
+    "form-guide-dev": "vuepress dev ./websites/form-guide/docs",
+    "form-guide-build": "vuepress build ./websites/form-guide/docs",
+    "form-guide-deploy": "cd ./websites/form-guide && netlify deploy --dir=./docs/.vuepress/dist",
+    
     "build": "lerna run build --stream"
   },
   "publishConfig": {

@@ -1,0 +1,4 @@
+
+Excerpt__
+The excerpt method does not properly parse the markdown. So the image paths becomes wrong.
+Have to take the excerpt without image. Note: Don't waste more time on this. It is difficult to solve this issue because of the way vuepress works

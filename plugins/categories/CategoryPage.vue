@@ -1,6 +1,6 @@
 <template>
 <div>
-    <index-list :pages="pages" />
+    <index-list :pages="pages" :show_excerpt="true" />
 </div>
 </template>
 <script>
