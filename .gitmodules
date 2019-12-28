@@ -1,3 +1,6 @@
 [submodule "websites/form-guide"]
 	path = websites/form-guide
 	url = git@gitlab.com:simfatic/form_guide_md.git
+[submodule "websites/jsc"]
+	path = websites/jsc
+	url = git@gitlab.com:simfatic/javascript-coder.git

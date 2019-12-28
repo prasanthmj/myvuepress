@@ -19,7 +19,7 @@
     "form-guide-dev": "vuepress dev ./websites/form-guide/docs",
     "form-guide-build": "vuepress build ./websites/form-guide/docs",
     "form-guide-deploy": "cd ./websites/form-guide && netlify deploy --dir=./docs/.vuepress/dist",
-    
+    "jsc-dev": "vuepress dev ./websites/jsc/docs",
     "build": "lerna run build --stream"
   },
   "publishConfig": {
