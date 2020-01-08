@@ -1,0 +1,14 @@
+{
+    "name": "@myvuepress/vuepress-plugin-vcode",
+    "version": "1.0.0",
+    "main":"index.js",
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "codemirror": "^5.50.0",
+        "jotted": "^1.5.2",
+        "js-beautify": "^1.10.2"
+    }
+}
+  
