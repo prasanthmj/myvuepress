@@ -2,8 +2,7 @@
     <div :class="$site.themeConfig.sidebar.classes">
         <div v-for="(side_item,idx) in $site.themeConfig.sidebar.items" :key="idx" class="mb-4" >
             <div v-if="side_item.type == 'banner'">
-            <a :href="side_item.link"><img 
-                        :src="side_item.image" :alt="side_item.alt_text"></a>
+                <banner-rotation  :banners="side_item.banners" />
             </div>
             <div v-if="side_item.type == 'related-by-category' && show_related_items">
                 <category-list :heading="side_item.heading"/>

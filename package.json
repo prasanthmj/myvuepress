@@ -8,6 +8,7 @@
   ],
   "private": true,
   "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.2.0",
     "codemirror": "^5.50.2",
     "jotted": "^1.5.2",
     "js-beautify": "^1.10.2",
