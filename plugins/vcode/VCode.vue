@@ -16,6 +16,7 @@
 .vjotted .jotted
 {
     height:24rem;
+    margin:1rem 0;
 }
 
 .jotted-plugin-pen .jotted-pane
@@ -43,6 +44,14 @@ export default {
         the_html:'',
         the_css:''
     }),
+    props:
+    {
+        show_console:
+        {
+            type: Boolean,
+            default: false
+        }
+    },
 
     async mounted()
     {
@@ -66,11 +75,18 @@ export default {
             files.push({type,content});
         }
         
-        new Jotted(this.$refs.jotted_ctr, 
-        {
+        let options = {
             files,
             plugins: [ 'codemirror', 'pen' ]
-        });
+        };
+
+        if(this.show_console)
+        {
+            options.plugins.unshift('console');
+        }
+        
+
+        new Jotted(this.$refs.jotted_ctr, options);
 
     }
 }
