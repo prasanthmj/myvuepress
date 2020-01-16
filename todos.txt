@@ -4,8 +4,4 @@ The excerpt method does not properly parse the markdown. So the image paths beco
 Have to take the excerpt without image. Note: Don't waste more time on this. It is difficult to solve this issue because of the way vuepress works
 
 
-Jotted
-Make a vue wrapper for Jotted editor
-- make it possible to define the pane sizes
-- make it possible to add libs to the <head> tag
-- option to hide some panes if not needed (JS/CSS)
+
