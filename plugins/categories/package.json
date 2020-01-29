@@ -1,12 +1,12 @@
 {
     "name": "@myvuepress/vuepress-plugin-categories",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "main": "index.js",
     "publishConfig": {
         "access": "public"
     },
     "dependencies": {
-        "@myvuepress/utils": "*",
+        "@myvuepress/utils": "^1.0.2",
         "@myvuepress/vuepress-plugin-indexlist": "*",
         "slugify": "^1.3.5"
     }
