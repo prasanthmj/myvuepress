@@ -1,12 +1,12 @@
 {
     "name": "@myvuepress/vuepress-plugin-tagged",
-    "version": "1.0.0",
-    "main":"index.js",
+    "version": "1.0.3",
+    "main": "index.js",
     "publishConfig": {
         "access": "public"
     },
     "dependencies": {
+        "@myvuepress/vuepress-plugin-indexlist": "*",
         "slugify": "^1.3.5"
     }
 }
-  
