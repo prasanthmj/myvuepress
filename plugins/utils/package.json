@@ -1,9 +1,8 @@
 {
     "name": "@myvuepress/utils",
-    "version": "1.0.0",
-    "main":"index.js",
+    "version": "1.0.1",
+    "main": "index.js",
     "publishConfig": {
         "access": "public"
     }
 }
-  

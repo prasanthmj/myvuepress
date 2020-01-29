@@ -9,9 +9,6 @@
   "private": true,
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.2.0",
-    "codemirror": "^5.50.2",
-    "jotted": "^1.5.2",
-    "js-beautify": "^1.10.2",
     "lerna": "^3.19.0",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
@@ -19,7 +16,7 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "version-upd":"lerna version major",
+    "version-upd":"lerna version patch",
     "show-website-1": "vuepress dev ./websites/website1",
     "form-guide-dev": "vuepress dev ./websites/form-guide/docs",
     "form-guide-build": "vuepress build ./websites/form-guide/docs",
@@ -27,7 +24,8 @@
     "jsc-dev": "vuepress dev ./websites/jsc/docs",
     "jsc-build": "vuepress build ./websites/jsc/docs",
     "jsc-deploy": "cd ./websites/jsc && netlify deploy --dir=./docs/.vuepress/dist",
-    "build": "lerna run build --stream"
+    "build": "lerna run build --stream",
+    "release": "lerna  publish  --registry http://localhost:4873 --no-git-tag-version"
   },
   "publishConfig": {
     "registry": "http://localhost:4873"

@@ -49,7 +49,6 @@ function spongeTheme(opts, ctx)
         require('@myvuepress/vuepress-plugin-categories'),
         require('@myvuepress/vuepress-plugin-tagged'),
         require("@myvuepress/vuepress-plugin-indexlist"),
-        require("@myvuepress/vuepress-plugin-vcode"),
         require("@myvuepress/vuepress-plugin-banner")
       ],
       ready()

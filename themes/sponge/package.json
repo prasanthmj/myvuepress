@@ -1,9 +1,14 @@
 {
     "name": "@myvuepress/vuepress-theme-sponge",
-    "version": "1.0.0",
-    "main":"index.js",
+    "version": "1.0.1",
+    "main": "index.js",
     "publishConfig": {
         "access": "public"
+    },
+    "dependencies": {
+        "@myvuepress/vuepress-plugin-banner": "*",
+        "@myvuepress/vuepress-plugin-categories": "*",
+        "@myvuepress/vuepress-plugin-indexlist": "*",
+        "@myvuepress/vuepress-plugin-tagged": "*"
     }
 }
-  
