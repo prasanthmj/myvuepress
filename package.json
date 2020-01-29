@@ -18,12 +18,6 @@
     "bootstrap": "lerna bootstrap --use-workspaces",
     "version-upd":"lerna version patch",
     "show-website-1": "vuepress dev ./websites/website1",
-    "form-guide-dev": "vuepress dev ./websites/form-guide/docs",
-    "form-guide-build": "vuepress build ./websites/form-guide/docs",
-    "form-guide-deploy": "cd ./websites/form-guide && netlify deploy --prod --dir=./docs/.vuepress/dist",
-    "jsc-dev": "vuepress dev ./websites/jsc/docs",
-    "jsc-build": "vuepress build ./websites/jsc/docs",
-    "jsc-deploy": "cd ./websites/jsc && netlify deploy --dir=./docs/.vuepress/dist",
     "build": "lerna run build --stream",
     "release": "lerna  publish from-git"
   },
