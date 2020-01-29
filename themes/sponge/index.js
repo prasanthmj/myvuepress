@@ -1,3 +1,4 @@
+//version update check
 const path = require('path')
 
 var defaultSettings=
