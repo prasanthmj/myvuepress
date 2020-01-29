@@ -1,6 +1,6 @@
 {
     "name": "@myvuepress/vuepress-theme-sponge",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "license": "MIT",
     "description": "A simple looking theme for Vuepress. Makes use of plugins like categories and tags",
     "main": "index.js",
@@ -8,9 +8,9 @@
         "access": "public"
     },
     "dependencies": {
-        "@myvuepress/vuepress-plugin-banner": "^1.0.4",
-        "@myvuepress/vuepress-plugin-categories": "^1.0.5",
-        "@myvuepress/vuepress-plugin-indexlist": "^1.0.3",
-        "@myvuepress/vuepress-plugin-tagged": "^1.0.6"
+        "@myvuepress/vuepress-plugin-banner": "^1.0.5",
+        "@myvuepress/vuepress-plugin-categories": "^1.0.6",
+        "@myvuepress/vuepress-plugin-indexlist": "^1.0.4",
+        "@myvuepress/vuepress-plugin-tagged": "^1.0.7"
     }
 }

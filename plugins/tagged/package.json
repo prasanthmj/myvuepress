@@ -1,6 +1,6 @@
 {
     "name": "@myvuepress/vuepress-plugin-tagged",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "license": "MIT",
     "description": "Vuepress plugin that creates tag lists and tag pages",
     "main": "index.js",
@@ -8,7 +8,7 @@
         "access": "public"
     },
     "dependencies": {
-        "@myvuepress/vuepress-plugin-indexlist": "^1.0.3",
+        "@myvuepress/vuepress-plugin-indexlist": "^1.0.4",
         "slugify": "^1.3.5"
     }
 }

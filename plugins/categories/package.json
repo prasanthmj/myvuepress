@@ -2,14 +2,14 @@
     "name": "@myvuepress/vuepress-plugin-categories",
     "license": "MIT",
     "description": "Vuepress plugin that automatically creates categories based on the directory structure",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "main": "index.js",
     "publishConfig": {
         "access": "public"
     },
     "dependencies": {
-        "@myvuepress/utils": "^1.0.3",
-        "@myvuepress/vuepress-plugin-indexlist": "^1.0.3",
+        "@myvuepress/utils": "^1.0.4",
+        "@myvuepress/vuepress-plugin-indexlist": "^1.0.4",
         "slugify": "^1.3.5"
     }
 }
