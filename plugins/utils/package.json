@@ -5,5 +5,6 @@
     "main": "index.js",
     "publishConfig": {
         "access": "public"
-    }
+    },
+    "gitHead": "c7aff00e2312c1e8ff658714a9f646dc269e3483"
 }

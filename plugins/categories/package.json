@@ -11,5 +11,6 @@
         "@myvuepress/utils": "^1.0.3",
         "@myvuepress/vuepress-plugin-indexlist": "^1.0.3",
         "slugify": "^1.3.5"
-    }
+    },
+    "gitHead": "c7aff00e2312c1e8ff658714a9f646dc269e3483"
 }
