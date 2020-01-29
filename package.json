@@ -19,6 +19,7 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
+    "version-upd":"lerna version major",
     "show-website-1": "vuepress dev ./websites/website1",
     "form-guide-dev": "vuepress dev ./websites/form-guide/docs",
     "form-guide-build": "vuepress build ./websites/form-guide/docs",
