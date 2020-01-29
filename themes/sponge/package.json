@@ -1,6 +1,8 @@
 {
     "name": "@myvuepress/vuepress-theme-sponge",
     "version": "1.0.3",
+    "license": "MIT",
+    "description": "A simple looking theme for Vuepress. Makes use of plugins like categories and tags",
     "main": "index.js",
     "publishConfig": {
         "access": "public"

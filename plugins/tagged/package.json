@@ -1,6 +1,8 @@
 {
     "name": "@myvuepress/vuepress-plugin-tagged",
     "version": "1.0.5",
+    "license": "MIT",
+    "description": "Vuepress plugin that creates tag lists and tag pages",
     "main": "index.js",
     "publishConfig": {
         "access": "public"

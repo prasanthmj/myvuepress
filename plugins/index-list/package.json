@@ -1,5 +1,7 @@
 {
     "name": "@myvuepress/vuepress-plugin-indexlist",
+    "license": "MIT",
+    
     "version": "1.0.2",
     "main": "index.js",
     "publishConfig": {

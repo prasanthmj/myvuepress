@@ -1,5 +1,7 @@
 {
     "name": "@myvuepress/vuepress-plugin-categories",
+    "license": "MIT",
+    "description": "Vuepress plugin that automatically creates categories based on the directory structure",
     "version": "1.0.4",
     "main": "index.js",
     "publishConfig": {

@@ -1,5 +1,7 @@
 {
     "name": "@myvuepress/vuepress-plugin-banner",
+    "license": "MIT",
+    "description": "A simple banner plugin for Vuepress that displays a random banner from a list of banners",
     "version": "1.0.3",
     "main": "index.js",
     "publishConfig": {
