@@ -12,12 +12,14 @@
     "lerna": "^3.19.0",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
-    "typescript": "^3.6.3"
+    "typescript": "^3.6.3",
+    "vuepress": "^1.2.0"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "version-upd":"lerna version patch",
+    "version-upd": "lerna version patch",
     "show-website-1": "vuepress dev ./websites/website1",
+    "build-website-1": "vuepress build ./websites/website1",
     "build": "lerna run build --stream",
     "release": "lerna  publish from-git"
   },
@@ -38,5 +40,4 @@
   "bugs": {
     "url": "https://github.com/prasanthmj/myvuepress/issues"
   }
-
 }
