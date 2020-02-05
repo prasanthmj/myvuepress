@@ -1,6 +1,6 @@
 {
     "name": "@myvuepress/vuepress-theme-sponge",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "license": "MIT",
     "description": "A simple theme for Vuepress. Makes use of plugins like categories and tags",
     "main": "index.js",
