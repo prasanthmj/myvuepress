@@ -60,14 +60,15 @@ function spongeTheme(opts, ctx)
           console.log("themeConfig ",siteConfig.themeConfig);
 
           let headers = [
-              ['link', { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' }],
+              ['link', { rel: 'stylesheet', href: 'https://ajax.aspnetcdn.com/ajax/bootstrap/4.4.1/css/bootstrap.min.css' }],
               
-              ['script', {  src: 'https://code.jquery.com/jquery-3.4.1.slim.min.js' }],
-              ['script', {  src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' }],
+              ['script', {  src: 'https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.slim.min.js' }],
+              ['script', {  src: 'https://ajax.aspnetcdn.com/ajax/bootstrap/4.4.1/bootstrap.min.js' }],
 
-              ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/prismjs@1.17.1/themes/prism.min.css' }],
+              ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism-tomorrow.min.css' }],
       
-              ['script', {  src: 'https://cdn.jsdelivr.net/npm/prismjs@1.17.1/prism.min.js' }]
+              ['script', {  src: 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/prism.min.js' }],
+              ['script', {  src: 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/plugins/autoloader/prism-autoloader.min.js' }]
               
           ];
           for(let header of headers)
