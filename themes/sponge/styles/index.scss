@@ -39,3 +39,27 @@ img
     margin: 2rem 0;
     border-top: 1px solid #ddd;
 }
+
+.custom-block
+{
+    background-color: #f3f5f7;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;    
+    
+    &.note
+    {
+        border-color: #42b983;
+        border-left-width: .5rem;
+        border-left-style: solid;
+    }
+    & .custom-block-title {
+        font-weight: bold;
+        font-size: 110%;
+        
+    }
+}
+
+iframe 
+{
+    margin: 2rem 0;
+}

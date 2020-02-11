@@ -11,6 +11,7 @@
         "@myvuepress/vuepress-plugin-banner": "^1.0.5",
         "@myvuepress/vuepress-plugin-categories": "^1.0.6",
         "@myvuepress/vuepress-plugin-indexlist": "^1.0.4",
-        "@myvuepress/vuepress-plugin-tagged": "^1.0.7"
+        "@myvuepress/vuepress-plugin-tagged": "^1.0.7",
+        "vuepress-plugin-container": "^2.1.2"
     }
 }

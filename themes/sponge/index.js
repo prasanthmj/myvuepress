@@ -50,7 +50,14 @@ function spongeTheme(opts, ctx)
         require('@myvuepress/vuepress-plugin-categories'),
         require('@myvuepress/vuepress-plugin-tagged'),
         require("@myvuepress/vuepress-plugin-indexlist"),
-        require("@myvuepress/vuepress-plugin-banner")
+        require("@myvuepress/vuepress-plugin-banner"),
+        [
+          'vuepress-plugin-container',
+          {
+            type: 'note',
+            defaultTitle: 'Note',
+          }
+        ]
       ],
       ready()
       {
