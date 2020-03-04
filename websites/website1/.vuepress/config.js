@@ -34,7 +34,8 @@ module.exports = {
                 {
                     items: [
                         
-                        {type:'related-by-category'}
+                        {type:'related-by-category'},
+                        {type:'adsense', ad_client:'ca-pub-3769017195253484', ad_slot:'8990517010'}
                     ]
                 },
                 bottom_block:

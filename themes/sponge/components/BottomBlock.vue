@@ -10,6 +10,12 @@
             <div v-if="item.type == 'tag-list'" class="tag-list-ctr">
                 <tag-list />
             </div>
+            <div v-if="item.type == 'adsense'" >
+                <Adsense
+                :data-ad-client="item.ad_client"
+                :data-ad-slot="item.ad_slot">
+                </Adsense>
+            </div>
         </div>
     </div>
 </template>

@@ -7,6 +7,12 @@
             <div v-if="side_item.type == 'related-by-category' && show_related_items">
                 <category-list :heading="side_item.heading"/>
             </div>
+            <div v-if="side_item.type == 'adsense'" >
+                <Adsense
+                :data-ad-client="side_item.ad_client"
+                :data-ad-slot="side_item.ad_slot">
+                </Adsense>
+            </div>
         </div>
         
     </div>
